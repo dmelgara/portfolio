@@ -1,6 +1,5 @@
 /* style.css */
 
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -56,18 +55,17 @@ body {
 }
 
 /* About Me Section */
-/* Center and style profile image */
 .profile-container {
     display: flex;
     justify-content: center;
 }
 
 .profile-img {
-    width: 150px; /* Adjust the size */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff; /* Optional: adds a border around */
+    border: 4px solid #fff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,7 +78,7 @@ body {
 }
 
 .mt-3 a:hover {
-    color: #0d6efd; /* Bootstrap primary color */
+    color: #0d6efd; 
 }
 
 
