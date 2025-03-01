@@ -1,222 +1,4 @@
-/* style.css */
 
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-    margin-right: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0d6efd;
-}
-
-@keyframes fadeColor {
-    0% { color: #ffffff; }
-    50% { color: #0d6efd; } /* Bootstrap primary blue */
-    100% { color: #ffffff; }
-}
-
-#techStack {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 30px;
-    position: relative;
-    animation: fadeColor 4s infinite ease-in-out;
-}
-
-
-/* Home Section */
-#home {
-    background-image:url("./images/world.jpg");
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-#skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Space between cards */
-    padding: 50px 0;
-}
-
-#skills .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#skills .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 120px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: linear-gradient(135deg, #12afb2, #354889);
-    padding: 10px;
-    text-align: center;
-}
-
-#skills .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-#skills .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#skills .card img {
-    width: 40px; /* Adjust the size as needed */
-    height: 40px;
-}
-
-#skills .card-title {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-#home h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#home p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-#home .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 25px;
-}
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 100;
-    justify-content: center;
-}
-
-/* About Me Section */
-/* Center and style profile image */
-.profile-container {
-    display: flex;
-    justify-content: center;
-}
-
-.profile-img {
-    width: 150px; /* Adjust the size */
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover;
-    border: 4px solid #fff; /* Optional: adds a border around */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Style for social icons */
-.mt-3 a {
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.mt-3 a:hover {
-    color: #0d6efd; /* Bootstrap primary color */
-}
-
-
-#aboutMe {
-    padding: 800px 20px;
-    background: linear-gradient(135deg, #1245b2, #354889);
-}
-
-#aboutMe h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: bold;    
-}
-
-#projects h2, #contact h2 {
-    color: #000000;
-     
-}
-
-#aboutMe p {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-#aboutMe .row div {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#aboutMe .bi {
-    color: #0d6efd;
-    margin-bottom: 10px;
-}
-
-#aboutMe h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-
-/* Projects Section */
-#projects {
-    padding: 60px 20px;
-    background-color: #ebebeb;
-}
-#projects p{
-    justify-content: center;
-}
-
-#projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-.card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -227,36 +9,32 @@ body {
     box-sizing: border-box;
 }
 
-/* Navbar */
 .navbar {
-    box-shadow: 0 4px 6px rgba(255, 254, 254, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
 }
 
-.navbar-brand {
+.navbar-brand { 
     font-size: 1.5rem;
     font-weight: bold;
-    margin-right: 1rem;
 }
 
 .navbar-nav .nav-link {
     margin-right: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
-    text-decoration: none;
-    color: #000;
 }
 
 .navbar-nav .nav-link:hover {
     color: #0d6efd;
 }
 
-/* Home Section */
+
 #home {
     background-image: url("./images/world.jpg");
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 20px; 
     background-size: cover;
     background-position: center;
 }
@@ -265,13 +43,11 @@ body {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #home p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    text-align: justify;
 }
 
 #home .btn {
@@ -284,49 +60,108 @@ body {
     cursor: pointer;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+
+#techStack {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeColor 4s infinite ease-in-out;
 }
 
-/* About Me Section */
-/* Center and style profile image */
-.profile-container {
+@keyframes fadeColor {
+    0% { color: #ffffff; }
+    50% { color: #0d6efd; }
+    100% { color: #ffffff; }
+}
+#techStackSection {
+    background: url("./images/laptop.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#skills {
+    padding: 50px 0;
+}
+
+
+#skills .row {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-.profile-img {
-    width: 150px; /* Adjust the size */
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover;
-    border: 4px solid #fff; /* Optional: adds a border around */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+#skills .card {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg, #12afb2, #354889);
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    max-width: 180px;
 }
 
-/* Style for social icons */
-.mt-3 a {
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    margin: 0 10px;
-    transition: color 0.3s;
-    text-decoration: none;
+#skills .card:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: translateY(-5px);
 }
 
-.mt-3 a:hover {
-    color: #0d6efd; /* Bootstrap primary color */
-}
 
-#aboutMe {
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #1245b2, #354889);
+#skills .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+
+#skills .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+#skills .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    #skills .card {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #skills .card {
+        max-width: 200px;
+        margin: 10px 0;
+    }
+    #skills .card img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    #skills .card {
+        max-width: 250px;
+        width: 90%;
+    }
+}
+
+
+#aboutMe {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #12b29d, #354889);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; 
 }
 
 #aboutMe h2 {
@@ -336,31 +171,39 @@ ul {
     text-align: center;
 }
 
-#projects h2, #contact h2 {
-    color: #000000;
-    text-align: center;
-}
-
 #aboutMe p {
     font-size: 1.1rem;
     margin-bottom: 40px;
     text-align: justify;
 }
 
-#aboutMe .row div {
-    text-align: center;
-    margin-bottom: 20px;
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#aboutMe .bi {
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.floating-icons a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.floating-icons a:hover {
     color: #0d6efd;
-    margin-bottom: 10px;
-}
-
-#aboutMe h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
 }
 
 /* Projects Section */
@@ -377,8 +220,10 @@ ul {
     margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
+    color: #343a40;
 }
 
+/* Cards for Projects */
 .card {
     border: none;
     border-radius: 15px;
@@ -418,6 +263,7 @@ ul {
     margin-bottom: 30px;
     font-weight: bold;
     text-align: center;
+    color: #343a40;
 }
 
 form .form-control {
@@ -437,7 +283,7 @@ form button {
     cursor: pointer;
 }
 
-/* Footer */
+
 footer {
     background: #343a40;
     color: #fff;
@@ -450,57 +296,3 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    background-color: #bcbcbc;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-form .form-control {
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 1rem;
-}
-
-form button {
-    border-radius: 25px;
-    font-size: 1rem;
-    padding: 10px 20px;
-}
-
-/* Footer */
-footer {
-    background: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
