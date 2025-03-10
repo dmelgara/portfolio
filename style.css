@@ -224,6 +224,38 @@ body {
 }
 
 /* Cards for Projects */
+.fixed-size-card {
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fixed-img {
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    align-self: center;
+}
+
 .card {
     border: none;
     border-radius: 15px;
