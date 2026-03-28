@@ -4,60 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- SEO -->
     <title>Diego Melgara — IT Support Technician | Help Desk Analyst</title>
     <meta name="description" content="Diego Melgara — Software Support Technician graduate from Mohawk College. Seeking entry-level IT Support, Help Desk, and Technical Support roles in Hamilton and the GTA." />
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- ═══════════════════════════════════════════
          NAVIGATION
     ═══════════════════════════════════════════ -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Diego Melgara</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    <nav id="mainNav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#home">
+          <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -65,31 +47,70 @@
          HERO
     ═══════════════════════════════════════════ -->
     <section id="home">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-glow"></div>
-      <div class="container hero-content">
-        <div class="hero-eyebrow">
-          <span class="hero-dot"></span>
+      <div class="hero-noise"></div>
+      <div class="hero-gradient-orb hero-orb-1"></div>
+      <div class="hero-gradient-orb hero-orb-2"></div>
+      <div class="hero-gradient-orb hero-orb-3"></div>
+      <div class="hero-grid-lines"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge animate-in" style="--delay: 0s">
+          <span class="status-dot"></span>
           Available for work — Hamilton &amp; GTA
         </div>
-        <h1 class="hero-name">Diego<br />Melgara</h1>
-        <p class="hero-role">
-          IT Support Technician&nbsp;&nbsp;/&nbsp;&nbsp;Help Desk Analyst&nbsp;&nbsp;/&nbsp;&nbsp;Technical Support
-        </p>
-        <p class="hero-statement">
+
+        <h1 class="hero-name animate-in" style="--delay: 0.1s">
+          <span class="hero-name-line">Diego</span>
+          <span class="hero-name-line hero-name-outline">Melgara</span>
+        </h1>
+
+        <div class="hero-role animate-in" style="--delay: 0.2s">
+          <span class="role-tag">IT Support Technician</span>
+          <span class="role-divider"></span>
+          <span class="role-tag">Help Desk Analyst</span>
+          <span class="role-divider"></span>
+          <span class="role-tag">Technical Support</span>
+        </div>
+
+        <p class="hero-statement animate-in" style="--delay: 0.3s">
           Software Support Technician graduate from Mohawk College with hands-on
           experience troubleshooting software, supporting end users, and working
           in fast-paced service environments. Ready to contribute to an IT
           support or help desk team.
         </p>
-        <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary-custom">View My Work</a>
-          <a href="./CV/Diego Melgara- 1.pdf" class="btn btn-outline-custom" target="_blank">Download CV</a>
+
+        <div class="hero-ctas animate-in" style="--delay: 0.4s">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="./CV/Diego Melgara- 1.pdf" class="btn-glass" target="_blank">
+            <i class="bi bi-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <div class="hero-stats animate-in" style="--delay: 0.5s">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-line"></div>
+          <div class="stat">
+            <span class="stat-number">AZ-900</span>
+            <span class="stat-label">Azure Certified</span>
+          </div>
+          <div class="stat-line"></div>
+          <div class="stat">
+            <span class="stat-number">2025</span>
+            <span class="stat-label">Mohawk Graduate</span>
+          </div>
         </div>
       </div>
-      <div class="hero-scroll-hint">
+
+      <div class="scroll-indicator animate-in" style="--delay: 0.8s">
+        <div class="scroll-line"></div>
         <span>Scroll</span>
-        <i class="bi bi-arrow-down"></i>
       </div>
     </section>
 
@@ -98,57 +119,63 @@
     ═══════════════════════════════════════════ -->
     <section id="about">
       <div class="container">
-        <div class="row align-items-center g-5">
-
+        <div class="about-layout">
           <!-- Photo column -->
-          <div class="col-lg-4 text-center">
-            <div class="about-photo-wrap">
-              <img src="./images/me.jpg" alt="Diego Melgara — IT Support Technician" class="about-photo" />
-              <div class="about-photo-badge">
+          <div class="about-visual">
+            <div class="about-photo-container">
+              <div class="about-photo-frame">
+                <img src="./images/me.jpg" alt="Diego Melgara — IT Support Technician" class="about-photo" />
+              </div>
+              <div class="about-photo-decoration"></div>
+              <div class="about-badge">
                 <i class="bi bi-patch-check-fill"></i> Open to work
               </div>
             </div>
-            <div class="about-social mt-4">
-              <a href="https://www.linkedin.com/in/diego-melgara/" target="_blank" aria-label="LinkedIn">
+            <div class="about-socials">
+              <a href="https://www.linkedin.com/in/diego-melgara/" target="_blank" aria-label="LinkedIn" class="social-link">
                 <i class="bi bi-linkedin"></i>
               </a>
-              <a href="https://github.com/dmelgara" target="_blank" aria-label="GitHub">
+              <a href="https://github.com/dmelgara" target="_blank" aria-label="GitHub" class="social-link">
                 <i class="bi bi-github"></i>
               </a>
             </div>
           </div>
-
           <!-- Text column -->
-          <div class="col-lg-8">
-            <p class="section-label">About Me</p>
-            <h2 class="section-heading">Hi, I'm <span class="accent">Diego Melgara</span></h2>
-
-            <p class="about-body">
-              I'm a recent graduate of the <strong>Software Support Technician</strong> program at
-              Mohawk College in Hamilton, Ontario. My training covered IT support
-              fundamentals including operating systems, networking, hardware,
-              software troubleshooting, and cloud computing concepts through the
-              Microsoft Azure AZ-900 curriculum.
-            </p>
-            <p class="about-body">
-              Outside of my studies, I built and tested several software
-              applications, gaining practical experience identifying bugs, tracing
-              system errors, validating data, and thinking through how users
-              interact with technology. I also bring customer service experience
-              from fast-paced environments where clear communication and quick
-              problem resolution were part of the daily job — including hands-on
-              work with POS systems and end-user support.
-            </p>
-            <p class="about-body">
-              I'm currently looking for an entry-level <strong>IT Support</strong>,
-              <strong>Help Desk</strong>, or <strong>Technical Support</strong> role
-              where I can apply my technical training, grow within a support team,
-              and help users resolve issues efficiently.
-            </p>
-
-            <div class="about-ctas mt-4">
-              <a href="./CV/Diego Melgara- 1.pdf" class="btn btn-primary-custom" target="_blank">Download CV</a>
-              <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+          <div class="about-text">
+            <div class="section-tag">About Me</div>
+            <h2 class="section-title">
+              Bridging <span class="gradient-text">technology</span> and people
+            </h2>
+            <div class="about-paragraphs">
+              <p>
+                I'm a recent graduate of the <strong>Software Support Technician</strong> program at
+                Mohawk College in Hamilton, Ontario. My training covered IT support
+                fundamentals including operating systems, networking, hardware,
+                software troubleshooting, and cloud computing concepts through the
+                Microsoft Azure AZ-900 curriculum.
+              </p>
+              <p>
+                Outside of my studies, I built and tested several software
+                applications, gaining practical experience identifying bugs, tracing
+                system errors, validating data, and thinking through how users
+                interact with technology. I also bring customer service experience
+                from fast-paced environments where clear communication and quick
+                problem resolution were part of the daily job — including hands-on
+                work with POS systems and end-user support.
+              </p>
+              <p>
+                I'm currently looking for an entry-level <strong>IT Support</strong>,
+                <strong>Help Desk</strong>, or <strong>Technical Support</strong> role
+                where I can apply my technical training, grow within a support team,
+                and help users resolve issues efficiently.
+              </p>
+            </div>
+            <div class="about-actions">
+              <a href="./CV/Diego Melgara- 1.pdf" class="btn-primary" target="_blank">
+                <span>Download CV</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-outline">Contact Me</a>
             </div>
           </div>
         </div>
@@ -158,18 +185,21 @@
     <!-- ═══════════════════════════════════════════
          TECHNICAL SKILLS
     ═══════════════════════════════════════════ -->
-    <section id="skills" class="section-alt">
+    <section id="skills">
       <div class="container">
-        <p class="section-label text-center">What I Work With</p>
-        <h2 class="section-heading text-center">Technical Skills</h2>
-        <p class="section-sub text-center">
-          Core competencies relevant to IT Support and Help Desk roles
-        </p>
+        <div class="section-header">
+          <div class="section-tag">What I Work With</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core competencies relevant to IT Support and Help Desk roles
+          </p>
+        </div>
 
         <div class="skills-grid">
-
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-display"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-display"></i>
+            </div>
             <h4>Operating Systems</h4>
             <ul>
               <li>Windows 10 / 11</li>
@@ -178,10 +208,13 @@
               <li>User accounts &amp; permissions</li>
               <li>Basic Linux command line</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-diagram-3"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
             <h4>Networking</h4>
             <ul>
               <li>TCP/IP, DNS, DHCP</li>
@@ -190,10 +223,13 @@
               <li>IP addressing</li>
               <li>ping, ipconfig, tracert diagnostics</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-grid-1x2"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-grid-1x2"></i>
+            </div>
             <h4>Software &amp; Productivity</h4>
             <ul>
               <li>Microsoft Office 365</li>
@@ -202,10 +238,13 @@
               <li>POS systems</li>
               <li>End-user software support</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-cloud"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-cloud"></i>
+            </div>
             <h4>Cloud Computing</h4>
             <ul>
               <li>Microsoft Azure (AZ-900 curriculum)</li>
@@ -214,10 +253,13 @@
               <li>Azure networking basics</li>
               <li>Cloud service comparisons</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-cpu"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
             <h4>Hardware &amp; Support</h4>
             <ul>
               <li>PC setup &amp; peripheral configuration</li>
@@ -226,10 +268,13 @@
               <li>Identifying hardware failures</li>
               <li>Issue escalation procedures</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-card-icon"><i class="bi bi-terminal"></i></div>
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <i class="bi bi-terminal"></i>
+            </div>
             <h4>Technical Tools</h4>
             <ul>
               <li>SQL — basic queries &amp; data lookup</li>
@@ -238,8 +283,8 @@
               <li>Software testing fundamentals</li>
               <li>Reading error logs &amp; traces</li>
             </ul>
+            <div class="skill-card-glow"></div>
           </div>
-
         </div>
       </div>
     </section>
@@ -249,35 +294,88 @@
     ═══════════════════════════════════════════ -->
     <section id="projects">
       <div class="container">
-        <p class="section-label text-center">What I've Built</p>
-        <h2 class="section-heading text-center">Technical Projects</h2>
-        <p class="section-sub text-center">
-          Personal projects built and tested independently — each focused on
-          understanding system behavior, debugging issues, and building reliable
-          functionality.
-        </p>
+        <div class="section-header">
+          <div class="section-tag">What I've Built</div>
+          <h2 class="section-title">Technical Projects</h2>
+          <p class="section-subtitle">
+            Personal projects built and tested independently — from web apps to a
+            full-stack mobile platform, each focused on real-world problem solving,
+            debugging, and reliable functionality.
+          </p>
+        </div>
 
-        <div class="projects-grid">
-
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div class="project-img-wrap">
-              <img src="./images/TodoSS.png" alt="Task Management Application screenshot" />
-              <div class="project-overlay">
-                <a href="https://github.com/dmelgara/To-do-App.git" target="_blank" class="btn btn-light btn-sm">
-                  <i class="bi bi-github"></i> View on GitHub
+        <div class="projects-list">
+          <!-- Project 1 — TwoStop (featured) -->
+          <div class="project-card" data-reveal>
+            <div class="project-image project-placeholder project-placeholder-twostop">
+              <div class="placeholder-content twostop-icon-wrap">
+                <i class="bi bi-phone"></i>
+                <div class="twostop-badge-row">
+                  <span class="twostop-badge"><i class="bi bi-map"></i></span>
+                  <span class="twostop-badge"><i class="bi bi-star-fill"></i></span>
+                  <span class="twostop-badge"><i class="bi bi-play-fill"></i></span>
+                </div>
+              </div>
+              <div class="project-image-overlay">
+                <a href="#" class="project-link-btn">
+                  <i class="bi bi-github"></i> View Code
                 </a>
               </div>
             </div>
-            <div class="project-body">
+            <div class="project-info">
+              <div class="project-number">01</div>
+              <div class="project-tags">
+                <span>React Native</span>
+                <span>Expo</span>
+                <span>TypeScript</span>
+                <span>Firebase</span>
+                <span>Google Maps</span>
+                <span>Social Platform</span>
+              </div>
+              <h3>TwoStop — Social Review App</h3>
+              <p>
+                TwoStop is a full-stack mobile application built with React Native and
+                Expo, combining location-based reviews with short-form photo and video
+                content — think TikTok meets Yelp. Users can share a "stop" by posting
+                a photo or 30-second video alongside a star rating, category tag, and
+                written review, all tied to a real place name.
+              </p>
+              <p>
+                The app features five screens: a live social feed with pull-to-refresh,
+                a discovery page with real-time category filtering, a media post creator
+                with device camera-roll access and video validation, an interactive Google
+                Maps view where reviewed locations appear as custom markers with preview
+                cards, and a full user profile with follower stats and a photo grid. Built
+                with TypeScript throughout, Firebase for authentication and data, and
+                custom services for posts and user state management.
+              </p>
+              <a href="#" class="project-cta">
+                <span>View on GitHub</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card project-card-reverse" data-reveal>
+            <div class="project-image">
+              <img src="./images/TodoSS.png" alt="Task Management Application screenshot" />
+              <div class="project-image-overlay">
+                <a href="https://github.com/dmelgara/To-do-App.git" target="_blank" class="project-link-btn">
+                  <i class="bi bi-github"></i> View Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-number">02</div>
               <div class="project-tags">
                 <span>Debugging</span>
                 <span>Input Validation</span>
                 <span>Testing</span>
                 <span>Data Persistence</span>
               </div>
-              <h3 class="project-title">Task Management Application</h3>
-              <p class="project-desc">
+              <h3>Task Management Application</h3>
+              <p>
                 Built a task management application using HTML, CSS, and
                 JavaScript with database integration to store and retrieve
                 task data. The main technical challenge was ensuring data
@@ -285,7 +383,7 @@
                 responded as expected under different user inputs — including
                 empty fields, duplicate entries, and unexpected characters.
               </p>
-              <p class="project-desc">
+              <p>
                 I spent a significant portion of the project testing edge
                 cases, tracing where data was being dropped or corrupted, and
                 fixing validation logic to prevent user errors from breaking
@@ -293,38 +391,40 @@
                 with the debugging cycle: reproducing an issue, isolating the
                 cause, applying a fix, and verifying the result.
               </p>
-              <a href="https://github.com/dmelgara/To-do-App.git" target="_blank" class="btn btn-primary-custom mt-2">
-                <i class="bi bi-github me-2"></i>View on GitHub
+              <a href="https://github.com/dmelgara/To-do-App.git" target="_blank" class="project-cta">
+                <span>View on GitHub</span>
+                <i class="bi bi-arrow-up-right"></i>
               </a>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div class="project-img-wrap">
+          <!-- Project 3 -->
+          <div class="project-card" data-reveal>
+            <div class="project-image">
               <img src="./images/Weather.png" alt="Weather Data Application screenshot" />
-              <div class="project-overlay">
-                <a href="#" class="btn btn-light btn-sm">
-                  <i class="bi bi-github"></i> View on GitHub
+              <div class="project-image-overlay">
+                <a href="#" class="project-link-btn">
+                  <i class="bi bi-github"></i> View Code
                 </a>
               </div>
             </div>
-            <div class="project-body">
+            <div class="project-info">
+              <div class="project-number">03</div>
               <div class="project-tags">
                 <span>Error Handling</span>
                 <span>API Troubleshooting</span>
                 <span>System Integration</span>
                 <span>Testing</span>
               </div>
-              <h3 class="project-title">Weather Data Application</h3>
-              <p class="project-desc">
+              <h3>Weather Data Application</h3>
+              <p>
                 Developed a weather application that retrieves real-time data
                 from an external API and displays it through a React front
                 end. A key focus was handling failure scenarios gracefully —
                 what happens when the API is unavailable, returns unexpected
                 data, or the user's input doesn't match a valid location.
               </p>
-              <p class="project-desc">
+              <p>
                 I implemented error handling to catch failed API calls and
                 display clear feedback to the user instead of crashing the
                 application. Testing under various conditions — valid cities,
@@ -333,33 +433,35 @@
                 failures, which is directly applicable to diagnosing
                 integration issues in a support context.
               </p>
-              <a href="#" class="btn btn-primary-custom mt-2">
-                <i class="bi bi-github me-2"></i>View on GitHub
+              <a href="#" class="project-cta">
+                <span>View on GitHub</span>
+                <i class="bi bi-arrow-up-right"></i>
               </a>
             </div>
           </div>
 
-          <!-- Project 3 -->
-          <div class="project-card">
-            <div class="project-img-wrap project-img-placeholder">
-              <div class="placeholder-inner">
+          <!-- Project 4 -->
+          <div class="project-card project-card-reverse" data-reveal>
+            <div class="project-image project-placeholder">
+              <div class="placeholder-content">
                 <i class="bi bi-joystick"></i>
               </div>
-              <div class="project-overlay">
-                <a href="#" class="btn btn-light btn-sm">
-                  <i class="bi bi-github"></i> View on GitHub
+              <div class="project-image-overlay">
+                <a href="#" class="project-link-btn">
+                  <i class="bi bi-github"></i> View Code
                 </a>
               </div>
             </div>
-            <div class="project-body">
+            <div class="project-info">
+              <div class="project-number">04</div>
               <div class="project-tags">
                 <span>Logic Debugging</span>
                 <span>Edge Cases</span>
                 <span>UI Testing</span>
                 <span>State Management</span>
               </div>
-              <h3 class="project-title">Card Game Application</h3>
-              <p class="project-desc">
+              <h3>Card Game Application</h3>
+              <p>
                 Built an interactive card game application in React,
                 implementing game logic, state management, and a responsive
                 user interface. The most valuable part of this project from a
@@ -368,19 +470,19 @@
                 inconsistent under rapid user input, or edge cases in card
                 logic producing results that shouldn't be possible.
               </p>
-              <p class="project-desc">
+              <p>
                 Resolving these issues required methodically stepping through
                 the application state, understanding where logic broke down,
                 and applying targeted fixes. The project reinforced the
                 importance of testing not just the expected path, but the
                 scenarios that real users actually encounter.
               </p>
-              <a href="#" class="btn btn-primary-custom mt-2">
-                <i class="bi bi-github me-2"></i>View on GitHub
+              <a href="#" class="project-cta">
+                <span>View on GitHub</span>
+                <i class="bi bi-arrow-up-right"></i>
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -388,55 +490,65 @@
     <!-- ═══════════════════════════════════════════
          EDUCATION & CERTIFICATIONS
     ═══════════════════════════════════════════ -->
-    <section id="education" class="section-alt">
+    <section id="education">
       <div class="container">
-        <p class="section-label text-center">Background</p>
-        <h2 class="section-heading text-center">Education &amp; Certifications</h2>
+        <div class="section-header">
+          <div class="section-tag">Background</div>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+        </div>
 
-        <div class="edu-grid">
-
+        <div class="edu-timeline">
           <!-- Diploma -->
-          <div class="edu-card">
-            <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
-            <div class="edu-body">
-              <span class="edu-badge">Ontario College Diploma</span>
-              <h4>Software Support Technician</h4>
-              <p class="edu-school">Mohawk College &nbsp;·&nbsp; Hamilton, Ontario &nbsp;·&nbsp; 2025</p>
-              <div class="edu-divider"></div>
-              <p class="edu-coursework-label">Relevant Coursework</p>
-              <div class="edu-tags">
-                <span>Operating Systems</span>
-                <span>Networking Fundamentals</span>
-                <span>Database Management</span>
-                <span>Software Testing &amp; QA</span>
-                <span>Cloud Computing</span>
-                <span>IT Support Practices</span>
-                <span>Hardware &amp; Infrastructure</span>
-                <span>Technical Communication</span>
+          <div class="edu-card" data-reveal>
+            <div class="edu-card-accent"></div>
+            <div class="edu-header">
+              <div class="edu-icon">
+                <i class="bi bi-mortarboard-fill"></i>
               </div>
+              <div>
+                <span class="edu-type">Ontario College Diploma</span>
+                <h4>Software Support Technician</h4>
+                <p class="edu-meta">Mohawk College &nbsp;·&nbsp; Hamilton, Ontario &nbsp;·&nbsp; 2025</p>
+              </div>
+            </div>
+            <div class="edu-divider"></div>
+            <p class="edu-coursework-title">Relevant Coursework</p>
+            <div class="edu-tags">
+              <span>Operating Systems</span>
+              <span>Networking Fundamentals</span>
+              <span>Database Management</span>
+              <span>Software Testing &amp; QA</span>
+              <span>Cloud Computing</span>
+              <span>IT Support Practices</span>
+              <span>Hardware &amp; Infrastructure</span>
+              <span>Technical Communication</span>
             </div>
           </div>
 
           <!-- Azure -->
-          <div class="edu-card">
-            <div class="edu-icon edu-icon-azure"><i class="bi bi-cloud-fill"></i></div>
-            <div class="edu-body">
-              <span class="edu-badge edu-badge-azure">Microsoft</span>
-              <h4>Azure Fundamentals — AZ-900</h4>
-              <p class="edu-school">Microsoft &nbsp;·&nbsp; Currently pursuing</p>
-              <div class="edu-divider"></div>
-              <p class="edu-coursework-label">Topics Covered</p>
-              <div class="edu-tags">
-                <span>Cloud Concepts</span>
-                <span>IaaS / PaaS / SaaS</span>
-                <span>Virtual Machines</span>
-                <span>Azure Storage</span>
-                <span>Azure Networking</span>
-                <span>Security &amp; Compliance</span>
+          <div class="edu-card edu-card-azure" data-reveal>
+            <div class="edu-card-accent edu-accent-azure"></div>
+            <div class="edu-header">
+              <div class="edu-icon edu-icon-azure">
+                <i class="bi bi-cloud-fill"></i>
+              </div>
+              <div>
+                <span class="edu-type edu-type-azure">Microsoft</span>
+                <h4>Azure Fundamentals — AZ-900</h4>
+                <p class="edu-meta">Microsoft &nbsp;·&nbsp; Currently pursuing</p>
               </div>
             </div>
+            <div class="edu-divider"></div>
+            <p class="edu-coursework-title">Topics Covered</p>
+            <div class="edu-tags">
+              <span>Cloud Concepts</span>
+              <span>IaaS / PaaS / SaaS</span>
+              <span>Virtual Machines</span>
+              <span>Azure Storage</span>
+              <span>Azure Networking</span>
+              <span>Security &amp; Compliance</span>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -446,32 +558,53 @@
     ═══════════════════════════════════════════ -->
     <section id="contact">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 text-center">
-            <p class="section-label">Get In Touch</p>
-            <h2 class="section-heading">Contact</h2>
-            <p class="contact-intro">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="section-tag">Get In Touch</div>
+            <h2 class="section-title">Let's work<br /><span class="gradient-text">together</span></h2>
+            <p class="contact-description">
               Open to entry-level IT Support, Help Desk, and Technical Support
               opportunities in the Hamilton and Greater Toronto Area. Feel free
               to reach out.
             </p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/diego-melgara/" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-linkedin"></i></div>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">diego-melgara</span>
+                </div>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <a href="https://github.com/dmelgara" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-github"></i></div>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">dmelgara</span>
+                </div>
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-lg-6">
+
+          <div class="contact-form-wrap">
             <form action="https://formspree.io/f/xpwqrazk" method="POST" class="contact-form">
-              <div class="mb-3">
-                <input type="text" name="name" class="form-control contact-input" placeholder="Your Name" required />
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
               </div>
-              <div class="mb-3">
-                <input type="email" name="email" class="form-control contact-input" placeholder="Your Email" required />
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
               </div>
-              <div class="mb-4">
-                <textarea name="message" class="form-control contact-input" placeholder="Your Message" rows="5" required></textarea>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about the opportunity..." rows="5" required></textarea>
               </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary-custom px-5">Send Message</button>
-              </div>
+              <button type="submit" class="btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="bi bi-send"></i>
+              </button>
             </form>
           </div>
         </div>
@@ -483,56 +616,111 @@
     ═══════════════════════════════════════════ -->
     <footer>
       <div class="container">
-        <p class="footer-name">Diego Melgara</p>
-        <p class="footer-roles">IT Support &nbsp;·&nbsp; Help Desk &nbsp;·&nbsp; Technical Support</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/diego-melgara/" target="_blank" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://github.com/dmelgara" target="_blank" aria-label="GitHub">
-            <i class="bi bi-github"></i>
-          </a>
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="nav-logo">
+              <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+            </span>
+            <p class="footer-tagline">IT Support &nbsp;·&nbsp; Help Desk &nbsp;·&nbsp; Technical Support</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/diego-melgara/" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/dmelgara" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
         </div>
-        <p class="footer-copy">&copy; 2026 Diego Melgara. All rights reserved.</p>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Diego Melgara. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Navbar active link on scroll -->
+    <!-- Scripts -->
     <script>
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      // Mobile nav toggle
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        navToggle.classList.toggle('active');
+      });
 
-      window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - 80;
-          if (window.scrollY >= sectionTop) current = section.getAttribute('id');
-        });
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      // Close mobile nav on link click
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('active');
         });
       });
 
-      // Smooth reveal on scroll
-      const revealEls = document.querySelectorAll('.skill-card, .project-card, .edu-card');
-      const observer = new IntersectionObserver((entries) => {
+      // Navbar active link on scroll + shrink
+      const sections = document.querySelectorAll('section[id]');
+      const allNavLinks = document.querySelectorAll('.nav-link');
+      const nav = document.getElementById('mainNav');
+
+      window.addEventListener('scroll', () => {
+        // Active link
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+        });
+        allNavLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+        });
+
+        // Navbar background
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
+
+      // Scroll reveal
+      const revealElements = document.querySelectorAll('[data-reveal]');
+      const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
+            revealObserver.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.1 });
-      revealEls.forEach(el => observer.observe(el));
-    </script>
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      revealElements.forEach(el => revealObserver.observe(el));
 
+      // Cursor glow (desktop only)
+      const cursorGlow = document.getElementById('cursorGlow');
+      if (window.matchMedia('(pointer: fine)').matches) {
+        document.addEventListener('mousemove', (e) => {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+          cursorGlow.style.opacity = '1';
+        });
+      }
+
+      // Skill card mouse glow effect
+      document.querySelectorAll('.skill-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', x + 'px');
+          card.style.setProperty('--mouse-y', y + 'px');
+        });
+      });
+    </script>
   </body>
 </html>
