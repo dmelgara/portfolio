@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester 1 — Engineering Portfolio | Diego Melgara</title>
+    <meta name="description" content="Semester 1 coursework — Mechanical Engineering Technology, Mohawk College. Technical Drawing, Manufacturing Management, Employment Legislation, and Applied Mathematics." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../engineering.css" />
+  </head>
+  <body>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════════ -->
+    <nav id="engNav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="../../index.html">
+          <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+          <span class="nav-section-label">Engineering</span>
+        </a>
+        <button class="nav-toggle" id="engNavToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-right" id="engNavRight">
+          <a href="../index.html" class="nav-link">Engineering Home</a>
+          <a href="#courses" class="nav-link active">Semester 1</a>
+          <a href="../../index.html" class="nav-link-main">
+            <i class="bi bi-arrow-left"></i> Main Site
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+         SEMESTER HERO
+    ═══════════════════════════════════════════ -->
+    <div class="semester-hero">
+      <div class="semester-hero-bg"></div>
+      <div class="semester-hero-inner">
+
+        <div class="breadcrumb animate-in" style="--delay: 0s">
+          <a href="../../index.html">diegomelgara.com</a>
+          <span class="breadcrumb-sep"><i class="bi bi-chevron-right"></i></span>
+          <a href="../index.html">Engineering</a>
+          <span class="breadcrumb-sep"><i class="bi bi-chevron-right"></i></span>
+          <span class="breadcrumb-current">Semester 1</span>
+        </div>
+
+        <div class="section-tag animate-in" style="--delay: 0.05s">Semester 01</div>
+
+        <h1 class="section-title animate-in" style="--delay: 0.1s" style="font-size: clamp(2.4rem, 5vw, 4rem);">
+          Foundations
+        </h1>
+
+        <div class="semester-meta animate-in" style="--delay: 0.2s">
+          <span class="semester-meta-item">
+            <i class="bi bi-calendar3"></i> Fall 2025
+          </span>
+          <span class="semester-meta-item">
+            <i class="bi bi-building"></i> Mohawk College
+          </span>
+          <span class="semester-meta-item">
+            <i class="bi bi-journals"></i> 4 Courses
+          </span>
+        </div>
+
+        <p class="animate-in" style="--delay: 0.25s; max-width: 600px; color: var(--text-muted); font-size: 1rem; line-height: 1.85;">
+          First semester of the MET Advanced Diploma. Covers the foundations
+          of engineering drawing and CAD, manufacturing systems, workplace
+          legislation, and the applied mathematics underpinning engineering
+          calculations.
+        </p>
+
+        <!-- GPA placeholder — uncomment and set value when ready
+        <div class="gpa-block animate-in" style="--delay: 0.3s">
+          <div class="gpa-badge">
+            <span class="gpa-badge-label">Semester GPA</span>
+            <span class="gpa-badge-value">X.X / 4.0</span>
+          </div>
+        </div>
+        -->
+
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         COURSES
+    ═══════════════════════════════════════════ -->
+    <section id="courses" class="courses-section">
+      <div class="container">
+        <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+          <div class="section-tag">Courses</div>
+          <h2 class="section-title">Semester 1 Courses</h2>
+        </div>
+
+        <div class="courses-grid">
+
+          <!-- AutoCAD / Technical Drawing -->
+          <div class="course-card" data-reveal>
+            <div class="course-code">TECH 1001 &nbsp;·&nbsp; Placeholder Code</div>
+            <h3>Technical Drawing</h3>
+            <p>
+              Fundamentals of multiview orthographic projection using AutoCAD.
+              Covers drafting standards, dimensioning, tolerancing, section
+              views, and the full workflow from freehand sketch to finished
+              CAD drawing.
+            </p>
+            <div class="course-card-footer">
+              <a href="./courses/autocad/" class="course-link">
+                View Course <i class="bi bi-arrow-right"></i>
+              </a>
+              <span class="course-tag">AutoCAD</span>
+            </div>
+          </div>
+
+          <!-- Manufacturing Management -->
+          <div class="course-card" data-reveal>
+            <div class="course-code">MFGT 1001 &nbsp;·&nbsp; Placeholder Code</div>
+            <h3>Manufacturing Management</h3>
+            <p>
+              Introduction to manufacturing systems, production planning,
+              quality control, and lean principles. Examines how products
+              move from raw material to finished good in industrial
+              environments.
+            </p>
+            <div class="course-card-footer">
+              <a href="./courses/manufacturing/" class="course-link">
+                View Course <i class="bi bi-arrow-right"></i>
+              </a>
+              <span class="course-tag">Manufacturing</span>
+            </div>
+          </div>
+
+          <!-- Ontario Employment Legislation -->
+          <div class="course-card" data-reveal>
+            <div class="course-code">MGMT IM153</div>
+            <h3>Ontario Employment Legislation</h3>
+            <p>
+              Survey of Ontario's key workplace statutes: the Employment
+              Standards Act, Occupational Health and Safety Act, Human
+              Rights Code, and WSIA. Includes an applied PSA poster project.
+            </p>
+            <div class="course-card-footer">
+              <a href="./courses/mgmt-im153/" class="course-link">
+                View Course <i class="bi bi-arrow-right"></i>
+              </a>
+              <span class="course-tag">Legislation</span>
+            </div>
+          </div>
+
+          <!-- Technical Mathematics -->
+          <div class="course-card" data-reveal>
+            <div class="course-code">MATH 1001 &nbsp;·&nbsp; Placeholder Code</div>
+            <h3>Technical Mathematics</h3>
+            <p>
+              Applied trigonometry and algebraic expressions for engineering
+              contexts. Right-triangle trig, law of sines and cosines, radical
+              expressions, and dimensional analysis for engineering
+              calculations.
+            </p>
+            <div class="course-card-footer">
+              <a href="./courses/math/" class="course-link">
+                View Course <i class="bi bi-arrow-right"></i>
+              </a>
+              <span class="course-tag">Mathematics</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="eng-footer">
+      <div class="eng-footer-inner">
+        <div class="eng-footer-brand">
+          <a href="../../index.html" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+          </a>
+          <p class="eng-footer-tagline">Semester 1 · MET · Mohawk College</p>
+        </div>
+        <nav class="eng-footer-links">
+          <a href="../index.html">Engineering Home</a>
+          <a href="#courses">Courses</a>
+          <a href="../../index.html">
+            diegomelgara.com <i class="bi bi-arrow-up-right footer-link-external"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="eng-footer-bottom">
+        <p>&copy; 2026 Diego Melgara &nbsp;·&nbsp; Engineering Portfolio</p>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.getElementById('engNavToggle');
+      const navRight = document.getElementById('engNavRight');
+      navToggle.addEventListener('click', () => {
+        navRight.classList.toggle('open');
+        navToggle.classList.toggle('active');
+      });
+      document.querySelectorAll('.nav-link, .nav-link-main').forEach(link => {
+        link.addEventListener('click', () => {
+          navRight.classList.remove('open');
+          navToggle.classList.remove('active');
+        });
+      });
+
+      const engNav = document.getElementById('engNav');
+      window.addEventListener('scroll', () => {
+        engNav.classList.toggle('scrolled', window.scrollY > 50);
+      });
+
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            revealObserver.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+      const cursorGlow = document.getElementById('cursorGlow');
+      if (window.matchMedia('(pointer: fine)').matches) {
+        document.addEventListener('mousemove', e => {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+          cursorGlow.style.opacity = '1';
+        });
+      }
+    </script>
+  </body>
+</html>

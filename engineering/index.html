@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  ENGINEERING PORTFOLIO — /engineering/index.html            ║
+  ║  Diego Melgara · Mechanical Engineering Technology          ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║                                                              ║
+  ║  HOW TO ADD A NEW SEMESTER                                   ║
+  ║  1. Duplicate the folder: engineering/semester-1/            ║
+  ║     → rename it:          engineering/semester-N/            ║
+  ║  2. Update semester number, term dates, and course cards     ║
+  ║     inside that folder's index.html                         ║
+  ║  3. In THIS file, find the matching .semester-card.locked    ║
+  ║     block for Semester N and:                                ║
+  ║       a. Change class from "semester-card locked"            ║
+  ║                          to "semester-card active"           ║
+  ║       b. Add the href to the "View Semester" link            ║
+  ║       c. Update the course count and description text        ║
+  ║                                                              ║
+  ║  HOW TO ADD A NEW COURSE (inside a semester)                 ║
+  ║  1. Duplicate any folder under semester-N/courses/           ║
+  ║     → rename it to your course slug (e.g. "statics")        ║
+  ║  2. In that index.html, update:                              ║
+  ║       · .course-hero-code    — e.g. "MECH 2001"             ║
+  ║       · .course-hero-title   — full course name              ║
+  ║       · .course-hero-desc    — course description paragraph  ║
+  ║       · .learned-list items  — 3–5 "What I learned" bullets  ║
+  ║       · .featured-work-grid  — assignment/project cards      ║
+  ║  3. Add a new <div class="course-card"> in the semester's    ║
+  ║     index.html courses grid                                  ║
+  ║  4. To show a final grade, uncomment the .grade-badge block  ║
+  ║     in the course page's course-hero-inner div and update    ║
+  ║     the grade value                                          ║
+  ║                                                              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Portfolio — Diego Melgara | MET · Mohawk College</title>
+    <meta name="description" content="Diego Melgara's Mechanical Engineering Technology portfolio. MET student at Mohawk College, pursuing the Queen's Engineering Bridge pathway toward a career in Canada's nuclear energy sector." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./engineering.css" />
+  </head>
+  <body>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════════ -->
+    <nav id="engNav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="../index.html">
+          <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+          <span class="nav-section-label">Engineering</span>
+        </a>
+        <button class="nav-toggle" id="engNavToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-right" id="engNavRight">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#roadmap" class="nav-link">Roadmap</a>
+          <a href="#semesters" class="nav-link">Semesters</a>
+          <a href="../index.html" class="nav-link-main">
+            <i class="bi bi-arrow-left"></i> Main Site
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <div class="eng-hero">
+      <div class="eng-hero-bg"></div>
+      <div class="eng-hero-orb eng-orb-1"></div>
+      <div class="eng-hero-orb eng-orb-2"></div>
+
+      <div class="container">
+        <div class="eng-hero-content">
+          <div class="eng-hero-badge animate-in" style="--delay: 0s">
+            <i class="bi bi-gear-wide-connected"></i>
+            MET · Mohawk College · Hamilton, ON
+          </div>
+
+          <h1 class="eng-hero-title animate-in" style="--delay: 0.1s">
+            Diego Melgara
+            <span>Engineering Portfolio</span>
+          </h1>
+
+          <p class="eng-hero-subtitle animate-in" style="--delay: 0.2s">
+            Mechanical Engineering Technology — Advanced Diploma
+          </p>
+
+          <p class="eng-hero-goal animate-in" style="--delay: 0.3s">
+            Documenting my academic work at Mohawk College as I build toward
+            the Queen's Engineering Bridge pathway — and a long-term career
+            in Canada's nuclear energy sector.
+          </p>
+
+          <div class="eng-hero-ctas animate-in" style="--delay: 0.4s">
+            <a href="#semesters" class="btn-primary">
+              <i class="bi bi-journal-richtext"></i>
+              View Coursework
+            </a>
+            <a href="#roadmap" class="btn-outline">
+              <i class="bi bi-map"></i>
+              Academic Roadmap
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT THIS PORTFOLIO
+    ═══════════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">About This Portfolio</div>
+        <h2 class="section-title">
+          Academic work,<br /><span class="gradient-text">documented honestly</span>
+        </h2>
+        <div class="eng-about-inner" data-reveal>
+          <p>
+            This section of my website documents the academic work I'm completing
+            as part of the <strong style="color: var(--text-primary)">Mechanical Engineering Technology (MET)</strong>
+            Advanced Diploma at Mohawk College. Each course page is a case-study-style
+            record of what I studied, what I built or produced, and what I took away
+            from it — not a transcript, but a working log of the learning.
+          </p>
+          <p>
+            The portfolio is structured by semester and scales as I progress through
+            the program. Right now it covers Semester 1. Future semesters will be
+            added as I complete them. The long-term goal is for this section to
+            tell the story of how I move from foundational coursework at Mohawk
+            through to an engineering degree and into the nuclear industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ACADEMIC ROADMAP
+    ═══════════════════════════════════════════ -->
+    <section id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">The Plan</div>
+          <h2 class="section-title">Academic Roadmap</h2>
+          <p class="section-subtitle">
+            Three stages from where I am now to where I'm going.
+          </p>
+        </div>
+
+        <div class="roadmap-track">
+
+          <!-- Step 1 — Current -->
+          <div class="roadmap-step active" data-reveal>
+            <div class="roadmap-step-num">Stage 01</div>
+            <div class="roadmap-step-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h4>MET Advanced Diploma</h4>
+            <p>
+              Mechanical Engineering Technology at Mohawk College. Covering
+              technical drawing, manufacturing, applied math, engineering
+              materials, and industry legislation.
+            </p>
+            <div style="margin-bottom: 12px;">
+              <span class="roadmap-org-tag">Mohawk College</span>
+              <span class="roadmap-org-tag">Hamilton, ON</span>
+            </div>
+            <div class="roadmap-status status-current">
+              <span class="status-dot"></span> In Progress
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="roadmap-connector">
+            <div class="roadmap-connector-line"></div>
+            <i class="bi bi-chevron-right roadmap-arrow"></i>
+          </div>
+
+          <!-- Step 2 — Target -->
+          <div class="roadmap-step future" data-reveal style="--delay: 0.1s">
+            <div class="roadmap-step-num">Stage 02</div>
+            <div class="roadmap-step-icon"><i class="bi bi-building-fill"></i></div>
+            <h4>Queen's Engineering Bridge</h4>
+            <p>
+              The Queen's University Engineering Bridge pathway — a direct
+              route from an Ontario Engineering Technology diploma to a
+              Bachelor of Applied Science (BASc) in Engineering.
+            </p>
+            <div style="margin-bottom: 12px;">
+              <span class="roadmap-org-tag">Queen's University</span>
+              <span class="roadmap-org-tag">Kingston, ON</span>
+            </div>
+            <div class="roadmap-status status-target">
+              <i class="bi bi-arrow-right" style="font-size: 0.65rem;"></i> Target
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="roadmap-connector">
+            <div class="roadmap-connector-line"></div>
+            <i class="bi bi-chevron-right roadmap-arrow"></i>
+          </div>
+
+          <!-- Step 3 — Long-term -->
+          <div class="roadmap-step future" data-reveal style="--delay: 0.2s">
+            <div class="roadmap-step-num">Stage 03</div>
+            <div class="roadmap-step-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h4>Nuclear Energy Sector</h4>
+            <p>
+              Career in Canada's nuclear industry — supporting new reactor
+              projects, SMR development, and the infrastructure that will
+              power the country's clean energy future.
+            </p>
+            <div style="margin-bottom: 12px;">
+              <span class="roadmap-org-tag">OPG · Darlington SMR</span>
+              <span class="roadmap-org-tag">Bruce Power</span>
+              <span class="roadmap-org-tag">CNL · Chalk River</span>
+            </div>
+            <div class="roadmap-status status-longterm">
+              <i class="bi bi-flag-fill" style="font-size: 0.65rem;"></i> Long-term Goal
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SEMESTERS
+    ═══════════════════════════════════════════ -->
+    <section id="semesters">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Coursework</div>
+          <h2 class="section-title">Semesters</h2>
+          <p class="section-subtitle">
+            Semester 1 is live. Future semesters will be added as I complete them.
+          </p>
+        </div>
+
+        <div class="semesters-grid">
+
+          <!-- Semester 1 — ACTIVE -->
+          <div class="semester-card active" data-reveal>
+            <div class="semester-num">Semester 01</div>
+            <h3>Foundations</h3>
+            <p>
+              Technical drawing and AutoCAD, manufacturing management,
+              Ontario employment legislation, and applied trigonometry.
+              The core first-semester curriculum for the MET program.
+            </p>
+            <div class="semester-card-footer">
+              <span class="semester-course-count">
+                <i class="bi bi-journals"></i> 4 courses
+              </span>
+              <a href="./semester-1/" class="semester-link">
+                View Semester <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Semester 2 — LOCKED -->
+          <div class="semester-card locked" data-reveal>
+            <div class="semester-num">Semester 02</div>
+            <h3>Coming Soon</h3>
+            <p>Semester 2 content will be added when complete.</p>
+            <div class="semester-card-footer">
+              <span class="semester-lock-badge">
+                <i class="bi bi-lock"></i> Not yet started
+              </span>
+            </div>
+          </div>
+
+          <!-- Semester 3 — LOCKED -->
+          <div class="semester-card locked" data-reveal>
+            <div class="semester-num">Semester 03</div>
+            <h3>Coming Soon</h3>
+            <p>Semester 3 content will be added when complete.</p>
+            <div class="semester-card-footer">
+              <span class="semester-lock-badge">
+                <i class="bi bi-lock"></i> Not yet started
+              </span>
+            </div>
+          </div>
+
+          <!-- Semester 4 — LOCKED -->
+          <div class="semester-card locked" data-reveal>
+            <div class="semester-num">Semester 04</div>
+            <h3>Coming Soon</h3>
+            <p>Semester 4 content will be added when complete.</p>
+            <div class="semester-card-footer">
+              <span class="semester-lock-badge">
+                <i class="bi bi-lock"></i> Not yet started
+              </span>
+            </div>
+          </div>
+
+          <!-- Semester 5 — LOCKED -->
+          <div class="semester-card locked" data-reveal>
+            <div class="semester-num">Semester 05</div>
+            <h3>Coming Soon</h3>
+            <p>Semester 5 content will be added when complete.</p>
+            <div class="semester-card-footer">
+              <span class="semester-lock-badge">
+                <i class="bi bi-lock"></i> Not yet started
+              </span>
+            </div>
+          </div>
+
+          <!-- Semester 6 — LOCKED -->
+          <div class="semester-card locked" data-reveal>
+            <div class="semester-num">Semester 06</div>
+            <h3>Coming Soon</h3>
+            <p>Semester 6 content will be added when complete.</p>
+            <div class="semester-card-footer">
+              <span class="semester-lock-badge">
+                <i class="bi bi-lock"></i> Not yet started
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="eng-footer">
+      <div class="eng-footer-inner">
+        <div class="eng-footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>DM<span class="logo-bracket"> /&gt;</span>
+          </a>
+          <p class="eng-footer-tagline">MET · Mohawk College · Engineering Portfolio</p>
+        </div>
+        <nav class="eng-footer-links">
+          <a href="#about">About</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#semesters">Semesters</a>
+          <a href="./semester-1/">Semester 1</a>
+          <a href="../index.html">
+            diegomelgara.com <i class="bi bi-arrow-up-right footer-link-external"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="eng-footer-bottom">
+        <p>&copy; 2026 Diego Melgara &nbsp;·&nbsp; Engineering Portfolio</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const navToggle = document.getElementById('engNavToggle');
+      const navRight = document.getElementById('engNavRight');
+      navToggle.addEventListener('click', () => {
+        navRight.classList.toggle('open');
+        navToggle.classList.toggle('active');
+      });
+      document.querySelectorAll('.nav-link, .nav-link-main').forEach(link => {
+        link.addEventListener('click', () => {
+          navRight.classList.remove('open');
+          navToggle.classList.remove('active');
+        });
+      });
+
+      // Navbar scrolled state
+      const engNav = document.getElementById('engNav');
+      window.addEventListener('scroll', () => {
+        engNav.classList.toggle('scrolled', window.scrollY > 50);
+      });
+
+      // Scroll reveal
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            revealObserver.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+      // Cursor glow
+      const cursorGlow = document.getElementById('cursorGlow');
+      if (window.matchMedia('(pointer: fine)').matches) {
+        document.addEventListener('mousemove', e => {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+          cursorGlow.style.opacity = '1';
+        });
+      }
+    </script>
+  </body>
+</html>
